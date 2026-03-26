@@ -1,0 +1,21 @@
+[package]
+exclude = ["target/"]
+name = "scantarget"
+version = "0.1.1"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/santhsecurity/scantarget"
+authors = ["Corum Collective LLC <engineering@corumcollective.com>"]
+description = "Target parsing and expansion library for security scanners"
+readme = "README.md"
+keywords = ["scanner", "target", "cidr", "security", "parsing"]
+categories = ["parser-implementations", "network-programming"]
+rust-version = "1.70"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+toml = "0.9"
+thiserror = "2"
+
+[dev-dependencies]
+tempfile = "3"
